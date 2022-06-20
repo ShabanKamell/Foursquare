@@ -1,13 +1,13 @@
 import Foundation
 
 public protocol DataManagerContract {
-    var cartRepo: CartRepo { get }
+    var venuesRepo: VenuesRepo { get }
 
 }
 
 public struct DataManager: DataManagerContract {
     public static let shared = DataManager()
-    public var cartRepo: CartRepo = .shared
+    public var venuesRepo: VenuesRepo = .shared
 
     public static func build() -> DataManagerContract {
         DataManager.shared

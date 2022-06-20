@@ -27,15 +27,14 @@ public struct AsyncMan {
             presentable?.showLoading()
         }
 
-        guard NetworkState.isConnected else {
-            handle(error: AppError.connection, presentable: presentable)
-            if options.hideLoading {
-                presentable?.hideLoading()
-            }
-            return
-        }
-
         Task {
+            guard await checkConnectivity(options: options) else {
+                handle(error: AppError.connection, presentable: presentable)
+                if options.hideLoading {
+                    presentable?.hideLoading()
+                }
+                return
+            }
             do {
                 try await operation()
             } catch {
@@ -55,4 +54,12 @@ public struct AsyncMan {
     private func handle(error: Error, presentable: AsyncManDelegate?) {
         ErrorProcessor.shared.process(error: error, presentable: presentable)
     }
+
+    private func checkConnectivity(options: RequestOptions) async -> Bool {
+        guard options.checkConnectivity else {
+            return true
+        }
+        return await NetworkConnectivity.isConnected()
+    }
+
 }

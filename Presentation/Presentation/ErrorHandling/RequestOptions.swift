@@ -23,6 +23,9 @@ public class RequestOptions {
     /// hide loading indicator
     var hideLoading: Bool = true
 
+    /// Check if the network is satisfied
+    var checkConnectivity: Bool = true
+
     public class Builder {
         private var options = RequestOptions()
 
@@ -52,6 +55,12 @@ public class RequestOptions {
         /// Hide loading indicator. True by default
         public func hideLoading(_ hide: Bool) -> Builder {
             options.hideLoading = hide
+            return self
+        }
+
+        /// Check if the network is satisfied
+        public func checkConnectivity(_ value: Bool) -> Builder {
+            options.checkConnectivity = value
             return self
         }
 

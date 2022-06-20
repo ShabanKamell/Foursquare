@@ -17,6 +17,7 @@ public protocol AppViewModel: ObservableObject, AsyncManDelegate {
             doOnError: ((Error) -> Void)?,
             showLoading: Bool,
             hideLoading: Bool,
+            checkConnectivity: Bool,
             _ operation: @escaping AsyncOperation
     )
 }
@@ -48,6 +49,7 @@ public extension AppViewModel {
             doOnError: ((Error) -> Void)? = nil,
             showLoading: Bool = true,
             hideLoading: Bool = true,
+            checkConnectivity: Bool = true,
             _ operation: @escaping AsyncOperation
     ) {
         let options = RequestOptions.Builder()
@@ -55,6 +57,7 @@ public extension AppViewModel {
                 .doOnError(doOnError)
                 .showLoading(showLoading)
                 .hideLoading(hideLoading)
+                .checkConnectivity(checkConnectivity)
                 .build()
         requester.request(
                 operation,

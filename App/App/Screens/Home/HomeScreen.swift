@@ -12,8 +12,13 @@ struct HomeScreen: AppScreen {
     @ObservedObject var vm: HomeVM
 
     var bodyContent: some View {
-        Text("Home")
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
+        AppList(vm.venues) { item in
+            Text(item.name)
+        }
+    }
+
+    func onContentAppear() {
+        vm.currentLocationRetriever.start()
     }
 }
 

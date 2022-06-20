@@ -99,34 +99,6 @@ fileprivate func showSwiftMessage(
         actionBlock: (() -> Void)? = nil,
         feedbackType: UINotificationFeedbackGenerator.FeedbackType
 ) {
-    // TODO: F
-//    UINotificationFeedbackGenerator().notificationOccurred(feedbackType)
-//
-//    let view = MessageView.viewFromNib(layout: layout)
-//    view.configureTheme(theme)
-//    view.configureDropShadow()
-//
-//    if actionTitle == nil { view.button?.isHidden = true }
-//    if title == nil { view.titleLabel?.isHidden = true }
-//
-//    view.configureContent(
-//            title: title,
-//            body: message,
-//            iconImage: nil,
-//            iconText: nil,
-//            buttonImage: nil,
-//            buttonTitle: actionTitle
-//    ) { _ in
-//        SwiftMessages.hide()
-//        actionBlock?()
-//    }
-//
-//    var config = SwiftMessages.Config()
-//
-//    config.duration = .seconds(seconds: 6)
-//    config.ignoreDuplicates = true
-//    config.dimMode = .gray(interactive: true)
-//    config.prefersStatusBarHidden = true
-//
-//    SwiftMessages.show(config: config, view: view)
+    // TODO: F, show message
+
 }
