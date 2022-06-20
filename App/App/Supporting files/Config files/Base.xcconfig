@@ -1,0 +1,18 @@
+//
+//  Base.xcconfig
+//  App
+//
+//  Created by Shaban Kamel on 11/09/2021.
+//  Copyright © 2021 sha. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+APP_NAME = Foursquare
+
+MAIN_PROJECT_ROOT = ${SRCROOT}
+
+BASE_BUNDLE_IDENTIFIER = com.foursquare.app
+
+PRODUCT_BUNDLE_IDENTIFIER = $(BASE_BUNDLE_IDENTIFIER)

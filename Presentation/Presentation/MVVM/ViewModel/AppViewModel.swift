@@ -1,0 +1,67 @@
+//
+// Created by Apple on 04/04/2021.
+//
+
+import SwiftUI
+import Data
+import Core
+import Combine
+
+public protocol AppViewModel: ObservableObject, AsyncManDelegate {
+    var requester: AsyncMan { get }
+    var loadState: LoadingState { get set }
+    var dataManager: DataManagerContract { get set }
+
+    func request(
+            inlineHandling: ((Error) -> Bool)?,
+            doOnError: ((Error) -> Void)?,
+            showLoading: Bool,
+            hideLoading: Bool,
+            checkConnectivity: Bool,
+            _ operation: @escaping AsyncOperation
+    )
+}
+
+// MARK:- AsyncManDelegate implementation
+public extension AppViewModel {
+
+    func showLoading() {
+        loadState.loading = .loading
+    }
+
+    func hideLoading() {
+        loadState.loading = .idle
+    }
+
+    func show(error: String) {
+        Reporter.shared.show(error: error)
+    }
+
+    func onHandleErrorFailed(error: Error) {
+        Reporter.shared.show(error: error.localizedDescription)
+    }
+}
+
+public extension AppViewModel {
+
+    func request(
+            inlineHandling: ((Error) -> Bool)? = nil,
+            doOnError: ((Error) -> Void)? = nil,
+            showLoading: Bool = true,
+            hideLoading: Bool = true,
+            checkConnectivity: Bool = true,
+            _ operation: @escaping AsyncOperation
+    ) {
+        let options = RequestOptions.Builder()
+                .inlineErrorHandling(inlineHandling)
+                .doOnError(doOnError)
+                .showLoading(showLoading)
+                .hideLoading(hideLoading)
+                .checkConnectivity(checkConnectivity)
+                .build()
+        requester.request(
+                operation,
+                options: options,
+                presentable: self)
+    }
+}
