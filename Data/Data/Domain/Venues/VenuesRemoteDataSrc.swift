@@ -5,14 +5,18 @@
 
 import CoreLocation
 
-struct VenuesRemoteDataSrc {
+public protocol VenuesRemoteDataSrcContract {
+    func loadVenues(location: CLLocation) async throws -> [VenueResponse]
+}
+
+public struct VenuesRemoteDataSrc: VenuesRemoteDataSrcContract {
     let api: VenuesApiProvider
 
-    init(api: VenuesApiProvider) {
+    public init(api: VenuesApiProvider) {
         self.api = api
     }
 
-    func loadVenues(location: CLLocation) async throws -> [VenueResponse] {
+    public func loadVenues(location: CLLocation) async throws -> [VenueResponse] {
         let response: VenuesResponse = try await api.request(api: .venues(location))
         return response.results
     }

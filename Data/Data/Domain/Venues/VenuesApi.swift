@@ -5,9 +5,9 @@
 
 import CoreLocation
 
-typealias VenuesApiProvider = ApiProvider<VenuesApi>
+public typealias VenuesApiProvider = ApiProvider<VenuesApi>
 
-enum VenuesApi {
+public enum VenuesApi {
     case venues(CLLocation)
 }
 

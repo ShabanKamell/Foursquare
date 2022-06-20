@@ -20,6 +20,8 @@
 		1826F21A28491BEF00FF882D /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1826F21528491BEF00FF882D /* Roboto-Bold.ttf */; };
 		1826F21D28491C8C00FF882D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1826F21B28491C8C00FF882D /* Colors.xcassets */; };
 		1826F21E28491C8C00FF882D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1826F21C28491C8C00FF882D /* Assets.xcassets */; };
+		18FE01A5286127DC00A8DC30 /* Libs in Frameworks */ = {isa = PBXBuildFile; productRef = 18FE01A4286127DC00A8DC30 /* Libs */; };
+		18FE01A7286127DC00A8DC30 /* Libs in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 18FE01A4286127DC00A8DC30 /* Libs */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		1BCAC6F1920B278474354D74 /* BasicApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAC8925C10FC3DA555F557 /* BasicApiResponse.swift */; };
 		1BCAC7F5339253030F42C7D2 /* DataBundleToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCACBDC8A956463649898D7 /* DataBundleToken.swift */; };
 		1BCAC9B552A5E3B15A474B67 /* AppResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAC749826273961B6E7017 /* AppResponse.swift */; };
@@ -35,6 +37,7 @@
 		58B837F346781EE6B3D0B749 /* ApiProviderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B837E29D9E6FAE83E06AE3 /* ApiProviderType.swift */; };
 		58B8383D6E7904842DC07F28 /* VenuesLocalDataSrc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B83658B1238FFDD9DF950B /* VenuesLocalDataSrc.swift */; };
 		58B838C86C2DEB6A33898EF2 /* ApiTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B83638568040C5BCC6E31A /* ApiTargetType.swift */; };
+		58B839C9654EE070EDFC1C70 /* VenuesRepoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B83D032ACD379F069FCDB2 /* VenuesRepoTest.swift */; };
 		58B83A35B37D38C519AAF12E /* VenuesRemoteDataSrc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B83992DC7763085B177DD2 /* VenuesRemoteDataSrc.swift */; };
 		58B83C2666B207DD5FC06F17 /* VenueDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B83E106DED704A0D67158C /* VenueDao.swift */; };
 		58B83C7939C088E56A9C5E46 /* VenuesApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B83587113EC8E5F956A039 /* VenuesApi.swift */; };
@@ -56,6 +59,20 @@
 			remoteInfo = Data;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		18FE01A6286127DC00A8DC30 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				18FE01A7286127DC00A8DC30 /* Libs in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		046B7FFD236F3A1500AE23A4 /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +110,7 @@
 		58B837E29D9E6FAE83E06AE3 /* ApiProviderType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiProviderType.swift; sourceTree = "<group>"; };
 		58B83992DC7763085B177DD2 /* VenuesRemoteDataSrc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenuesRemoteDataSrc.swift; sourceTree = "<group>"; };
 		58B83A2F36918D84838C0EB3 /* AppDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDatabase.swift; sourceTree = "<group>"; };
+		58B83D032ACD379F069FCDB2 /* VenuesRepoTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenuesRepoTest.swift; sourceTree = "<group>"; };
 		58B83D4D02DE63451EE73DFE /* VenuesResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenuesResponse.swift; sourceTree = "<group>"; };
 		58B83D5B671BCCA202ADFCE0 /* VenueItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueItem.swift; sourceTree = "<group>"; };
 		58B83E106DED704A0D67158C /* VenueDao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueDao.swift; sourceTree = "<group>"; };
@@ -122,6 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18FE01A5286127DC00A8DC30 /* Libs in Frameworks */,
 				046B8007236F3A1500AE23A4 /* Data.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -182,6 +201,7 @@
 			children = (
 				046B800B236F3A1500AE23A4 /* DataTests.swift */,
 				046B800D236F3A1500AE23A4 /* Info.plist */,
+				58B83D032ACD379F069FCDB2 /* VenuesRepoTest.swift */,
 			);
 			path = DataTests;
 			sourceTree = "<group>";
@@ -401,6 +421,7 @@
 				046B8002236F3A1500AE23A4 /* Sources */,
 				046B8003236F3A1500AE23A4 /* Frameworks */,
 				046B8004236F3A1500AE23A4 /* Resources */,
+				18FE01A6286127DC00A8DC30 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -408,6 +429,9 @@
 				046B8009236F3A1500AE23A4 /* PBXTargetDependency */,
 			);
 			name = DataTests;
+			packageProductDependencies = (
+				18FE01A4286127DC00A8DC30 /* Libs */,
+			);
 			productName = DataTests;
 			productReference = 046B8006236F3A1500AE23A4 /* DataTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -535,6 +559,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				046B800C236F3A1500AE23A4 /* DataTests.swift in Sources */,
+				58B839C9654EE070EDFC1C70 /* VenuesRepoTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -750,6 +775,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XKJKXVFT76;
 				INFOPLIST_FILE = DataTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -768,6 +794,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XKJKXVFT76;
 				INFOPLIST_FILE = DataTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -881,6 +908,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XKJKXVFT76;
 				INFOPLIST_FILE = DataTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -994,6 +1022,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XKJKXVFT76;
 				INFOPLIST_FILE = DataTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1046,6 +1075,10 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		18FE01A4286127DC00A8DC30 /* Libs */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Libs;
+		};
 		F2F6C752274EE0890066D794 /* Libs */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Libs;

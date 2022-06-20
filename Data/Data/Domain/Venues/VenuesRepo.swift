@@ -7,8 +7,13 @@ import CoreLocation
 
 public struct VenuesRepo {
     public static let shared = VenuesRepo.build()
-    private let remoteSrc: VenuesRemoteDataSrc
-    private let localSrc: VenuesLocalDataSrc
+    private let remoteSrc: VenuesRemoteDataSrcContract
+    private let localSrc: VenuesLocalDataSrcContract
+
+    public init(remoteSrc: VenuesRemoteDataSrcContract, localSrc: VenuesLocalDataSrcContract) {
+        self.remoteSrc = remoteSrc
+        self.localSrc = localSrc
+    }
 
     public func loadVenues(
             location: CLLocation,

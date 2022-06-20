@@ -7,14 +7,19 @@ import CoreLocation
 import UIKit
 import Core
 
-struct VenuesLocalDataSrc {
+public protocol VenuesLocalDataSrcContract {
+    func load() async throws -> [VenueResponse]
+    func save(_ items: [VenueResponse]) async throws
+}
+
+public struct VenuesLocalDataSrc: VenuesLocalDataSrcContract {
     let dao: VenueDao
 
-    func load() async throws -> [VenueResponse] {
+    public func load() async throws -> [VenueResponse] {
         try dao.all()
     }
 
-    func save(_ items: [VenueResponse]) async throws {
+    public func save(_ items: [VenueResponse]) async throws {
         try await dao.save(items)
     }
 }
