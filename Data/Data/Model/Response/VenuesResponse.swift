@@ -6,7 +6,7 @@
 import Foundation
 
 public struct VenuesResponse: Codable {
-    public let results: [Venue]
+    public let results: [VenueResponse]
 
     enum CodingKeys: String, CodingKey {
         case results = "results"

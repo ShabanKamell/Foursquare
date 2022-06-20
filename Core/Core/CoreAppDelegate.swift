@@ -10,6 +10,10 @@ open class CoreAppDelegate: UIResponder {
 
     // MARK: - Core Data stack
 
+    func applicationWillTerminate(_ application: UIApplication) {
+        saveContext()
+    }
+
     public lazy var persistentContainer: NSPersistentContainer = {
         /*
          The persistent container for the application. This implementation
@@ -17,7 +21,7 @@ open class CoreAppDelegate: UIResponder {
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
         */
-        let container = NSPersistentContainer(name: "Data")
+        let container = NSPersistentContainer(name: "Venue")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.

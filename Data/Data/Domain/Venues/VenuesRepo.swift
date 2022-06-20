@@ -12,13 +12,19 @@ public struct VenuesRepo {
 
     public func loadVenues(
             location: CLLocation,
-            networkState: NetworkConnectivity.State) async throws -> [Venue] {
+            networkState: NetworkConnectivity.State) async throws -> [VenueResponse] {
         switch networkState {
         case .satisfied:
-            return try await remoteSrc.loadVenues(location: location)
+            let items = try await remoteSrc.loadVenues(location: location)
+            try await saveVenues(items)
+            return items
         case .unsatisfied:
-            return try await localSrc.loadVenues(location: location)
+            return try await localSrc.load()
         }
+    }
+
+    func saveVenues(_ items: [VenueResponse]) async throws {
+        try await localSrc.save(items)
     }
 
 }
@@ -28,6 +34,6 @@ public extension VenuesRepo {
     static func build() -> VenuesRepo {
         VenuesRepo(
                 remoteSrc: VenuesRemoteDataSrc(api: VenuesApiProvider()),
-                localSrc: VenuesLocalDataSrc())
+                localSrc: VenuesLocalDataSrc(dao: VenueDao()))
     }
 }

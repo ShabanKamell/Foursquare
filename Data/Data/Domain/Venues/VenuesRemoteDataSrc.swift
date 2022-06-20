@@ -12,7 +12,7 @@ struct VenuesRemoteDataSrc {
         self.api = api
     }
 
-    func loadVenues(location: CLLocation) async throws -> [Venue] {
+    func loadVenues(location: CLLocation) async throws -> [VenueResponse] {
         let response: VenuesResponse = try await api.request(api: .venues(location))
         return response.results
     }

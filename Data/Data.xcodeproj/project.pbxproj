@@ -25,16 +25,18 @@
 		1BCAC9B552A5E3B15A474B67 /* AppResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAC749826273961B6E7017 /* AppResponse.swift */; };
 		1BCACBBD63A8BA51CDEFC635 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCACDBBEBB30FB00E930AC3 /* AppError.swift */; };
 		58B830128371379764F5ECCC /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B833A045B28FCAB1AF6384 /* Fonts.swift */; };
-		58B831BA53FDAB885AAD8B9A /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B83FDF9912EB194B8C7D03 /* Venue.swift */; };
+		58B831BA53FDAB885AAD8B9A /* VenueResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B83FDF9912EB194B8C7D03 /* VenueResponse.swift */; };
 		58B832299DF02983C028DCCC /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B832D9838565181C90B013 /* Task.swift */; };
 		58B832697F7A30B43BF2BC47 /* AppDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B837756F719E7580F599B1 /* AppDefaults.swift */; };
 		58B8330C8DE2B0004261A73E /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B8378811FF2E1DDEB880AD /* HTTPMethod.swift */; };
 		58B834B4F096A5958C786DBA /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B8325B030DFD7CF6A3564A /* Environment.swift */; };
 		58B83737257268F506D100CB /* NetworkConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B830AFA0F3634DBC023981 /* NetworkConnectivity.swift */; };
+		58B8375B6F5DB11F160FF587 /* AppDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B83A2F36918D84838C0EB3 /* AppDatabase.swift */; };
 		58B837F346781EE6B3D0B749 /* ApiProviderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B837E29D9E6FAE83E06AE3 /* ApiProviderType.swift */; };
 		58B8383D6E7904842DC07F28 /* VenuesLocalDataSrc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B83658B1238FFDD9DF950B /* VenuesLocalDataSrc.swift */; };
 		58B838C86C2DEB6A33898EF2 /* ApiTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B83638568040C5BCC6E31A /* ApiTargetType.swift */; };
 		58B83A35B37D38C519AAF12E /* VenuesRemoteDataSrc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B83992DC7763085B177DD2 /* VenuesRemoteDataSrc.swift */; };
+		58B83C2666B207DD5FC06F17 /* VenueDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B83E106DED704A0D67158C /* VenueDao.swift */; };
 		58B83C7939C088E56A9C5E46 /* VenuesApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B83587113EC8E5F956A039 /* VenuesApi.swift */; };
 		58B83C8BAA36825345D7A032 /* VenueItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B83D5B671BCCA202ADFCE0 /* VenueItem.swift */; };
 		58B83D69897D6A9A9ECD7223 /* VenuesRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B83E57C4A20231327E11DF /* VenuesRepo.swift */; };
@@ -90,10 +92,12 @@
 		58B8378811FF2E1DDEB880AD /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		58B837E29D9E6FAE83E06AE3 /* ApiProviderType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiProviderType.swift; sourceTree = "<group>"; };
 		58B83992DC7763085B177DD2 /* VenuesRemoteDataSrc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenuesRemoteDataSrc.swift; sourceTree = "<group>"; };
+		58B83A2F36918D84838C0EB3 /* AppDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDatabase.swift; sourceTree = "<group>"; };
 		58B83D4D02DE63451EE73DFE /* VenuesResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenuesResponse.swift; sourceTree = "<group>"; };
 		58B83D5B671BCCA202ADFCE0 /* VenueItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueItem.swift; sourceTree = "<group>"; };
+		58B83E106DED704A0D67158C /* VenueDao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueDao.swift; sourceTree = "<group>"; };
 		58B83E57C4A20231327E11DF /* VenuesRepo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenuesRepo.swift; sourceTree = "<group>"; };
-		58B83FDF9912EB194B8C7D03 /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
+		58B83FDF9912EB194B8C7D03 /* VenueResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueResponse.swift; sourceTree = "<group>"; };
 		6D6C7625B9BE9768A15DCF82 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		F2C7E25726ECCC5800C5239B /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		F2C7E25826ECCC5800C5239B /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
@@ -168,6 +172,7 @@
 				6D6C7625B9BE9768A15DCF82 /* DataManager.swift */,
 				58B832E6CB794F31DBD6F53D /* Network */,
 				1BCACB5D2AEC846D73B716B2 /* Shared */,
+				58B830161F515F4309692041 /* Database */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -233,6 +238,15 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		58B830161F515F4309692041 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				58B83E106DED704A0D67158C /* VenueDao.swift */,
+				58B83A2F36918D84838C0EB3 /* AppDatabase.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
 		58B832B044ADA20AAB25C7B4 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
@@ -273,7 +287,7 @@
 		58B8374234DEC1EBE742601B /* Response */ = {
 			isa = PBXGroup;
 			children = (
-				58B83FDF9912EB194B8C7D03 /* Venue.swift */,
+				58B83FDF9912EB194B8C7D03 /* VenueResponse.swift */,
 				58B83D4D02DE63451EE73DFE /* VenuesResponse.swift */,
 			);
 			path = Response;
@@ -506,11 +520,13 @@
 				58B838C86C2DEB6A33898EF2 /* ApiTargetType.swift in Sources */,
 				58B832299DF02983C028DCCC /* Task.swift in Sources */,
 				58B83C7939C088E56A9C5E46 /* VenuesApi.swift in Sources */,
-				58B831BA53FDAB885AAD8B9A /* Venue.swift in Sources */,
+				58B831BA53FDAB885AAD8B9A /* VenueResponse.swift in Sources */,
 				58B83E5B4B0F66FE129A2EF1 /* VenuesResponse.swift in Sources */,
 				58B837F346781EE6B3D0B749 /* ApiProviderType.swift in Sources */,
 				58B83C8BAA36825345D7A032 /* VenueItem.swift in Sources */,
 				58B8383D6E7904842DC07F28 /* VenuesLocalDataSrc.swift in Sources */,
+				58B83C2666B207DD5FC06F17 /* VenueDao.swift in Sources */,
+				58B8375B6F5DB11F160FF587 /* AppDatabase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

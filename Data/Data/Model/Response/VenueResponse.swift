@@ -5,7 +5,7 @@
 
 import Foundation
 
-public struct Venue: Codable {
+public struct VenueResponse: Codable {
     public let fsqID: String
     public let name: String
 

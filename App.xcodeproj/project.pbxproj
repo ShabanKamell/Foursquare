@@ -19,6 +19,7 @@
 		1BCACD2F6E64776612256EC6 /* SplashVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAC6F56BE3C441D7370C94 /* SplashVM.swift */; };
 		58B8308603DFCFCB6BA86731 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B833E85B4672641BBD3546 /* HomeScreen.swift */; };
 		58B83169248214D8DF4E982E /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B832D5693C297BB6F7E6A0 /* HomeVM.swift */; };
+		58B83779D4F21116062A59B1 /* Venue.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 58B83FD1B38435715FCDE66D /* Venue.xcdatamodeld */; };
 		F2772F7526FDB49A0047D753 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2772F7226FDB49A0047D753 /* App.swift */; };
 		F2772F7626FDB49A0047D753 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2772F7326FDB49A0047D753 /* AppDelegate.swift */; };
 		F2772F8726FDB4DA0047D753 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2772F8426FDB4DA0047D753 /* SceneDelegate.swift */; };
@@ -97,6 +98,7 @@
 		1BCACC1E18EE09AFDD029DC1 /* FontFamily+SwiftUIFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FontFamily+SwiftUIFont.swift"; sourceTree = "<group>"; };
 		58B832D5693C297BB6F7E6A0 /* HomeVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
 		58B833E85B4672641BBD3546 /* HomeScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		58B83EF00C02CBF744CD41EC /* Venue.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Venue.xcdatamodel; sourceTree = "<group>"; };
 		B66FF494228736CF007917C7 /* Foursquare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foursquare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2772F7226FDB49A0047D753 /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = App.swift; path = App/App.swift; sourceTree = "<group>"; };
 		F2772F7326FDB49A0047D753 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = App/AppDelegate.swift; sourceTree = "<group>"; };
@@ -247,6 +249,14 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		58B83B5AA9CFD936855C6709 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				58B83FD1B38435715FCDE66D /* Venue.xcdatamodeld */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
 		F2772F7726FDB4AE0047D753 /* Supporting files */ = {
 			isa = PBXGroup;
 			children = (
@@ -273,6 +283,7 @@
 			children = (
 				F2772F8C26FDB4F10047D753 /* SwiftUI */,
 				1BCAC7A81F40A490CE075F67 /* AppBundleToken.swift */,
+				58B83B5AA9CFD936855C6709 /* Database */,
 			);
 			name = Shared;
 			path = App/Shared;
@@ -538,6 +549,7 @@
 				1BCACD2F6E64776612256EC6 /* SplashVM.swift in Sources */,
 				58B83169248214D8DF4E982E /* HomeVM.swift in Sources */,
 				58B8308603DFCFCB6BA86731 /* HomeScreen.swift in Sources */,
+				58B83779D4F21116062A59B1 /* Venue.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1224,6 +1236,19 @@
 			productName = Libs;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		58B83FD1B38435715FCDE66D /* Venue.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				58B83EF00C02CBF744CD41EC /* Venue.xcdatamodel */,
+			);
+			currentVersion = 58B83EF00C02CBF744CD41EC /* Venue.xcdatamodel */;
+			path = Venue.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 046B7F6D236F365B00AE23A4 /* Project object */;
 }

@@ -4,11 +4,17 @@
 //
 
 import CoreLocation
+import UIKit
+import Core
 
 struct VenuesLocalDataSrc {
+    let dao: VenueDao
 
-    func loadVenues(location: CLLocation) async throws -> [Venue] {
-        []
+    func load() async throws -> [VenueResponse] {
+        try dao.all()
     }
 
+    func save(_ items: [VenueResponse]) async throws {
+        try await dao.save(items)
+    }
 }

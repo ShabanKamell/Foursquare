@@ -32,6 +32,7 @@ public class NetworkConnectivity {
                 @unknown default:
                     continuation.resume(returning: false)
                 }
+                monitor.cancel()
             }
             let queue = DispatchQueue(label: "Monitor")
             monitor.start(queue: queue)

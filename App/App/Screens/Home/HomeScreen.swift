@@ -13,8 +13,19 @@ struct HomeScreen: AppScreen {
 
     var bodyContent: some View {
         AppList(vm.venues) { item in
+            ItemView(item: item)
+        }
+    }
+
+    private func ItemView(item: VenueItem) -> some View {
+        HStack {
+            Image(systemName: .locationCircleFill)
+                    .resizable()
+                    .frame(width: 30, height: 30)
+                    .foregroundColor(.blue)
             Text(item.name)
         }
+                .padding()
     }
 
     func onContentAppear() {
