@@ -8,7 +8,7 @@ import XCTest
 
 class VenueRepoTest: XCTestCase {
 
-    func testExample() async throws {
+    func test_should_save_locally() async throws {
         let localSrc = FakeVenuesLocalDataSrc()
         let repo = VenuesRepo(
                 remoteSrc: VenuesRemoteDataSrc(api: VenuesApiProvider()),
