@@ -7,7 +7,7 @@ It has all features that would make it a modular, scalable, testable and maintai
 ## App Logic
 
 - The app displays the list of nearby venues from **Foursquare** Places API.
-- If there's no network connection the data will be fetched from `CoreData` which saved in the last time.
+- If there's no network connection, the data will be fetched from `CoreData` which saved in the last time.
 
 ## Stack:
 - [ ] SwiftUI
