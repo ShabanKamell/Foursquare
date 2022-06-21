@@ -16,6 +16,11 @@ It has all features that would make it a modular, scalable, testable and maintai
 - [ ] MVVM
 - [ ] Modular architecture
 
+## Modular Architecture
+
+ <img src="https://github.com/ShabanKamell/Foursquare/blob/main/blob/Modular%20Architecture.jpg?raw=true" height="600">
+
+
 ## README
 
 Each module has its own `README.md` file that documents the module.
