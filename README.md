@@ -20,9 +20,18 @@ It has all features that would make it a modular, scalable, testable and maintai
 
 Each module has its own `README.md` file that documents the module.
 
-## Important Note
+## Important Notes
 
-In Data/DataTests, there's a very simple example demonstrates how we can test repos.
+- [ ] To compile the app and get it working, you have to add the following struct in `Data/Data`
+and don't forget to add your **Foursquare token**.
+
+```swift
+struct FoursquareToken {
+    static let token = "TOKEN_HERE"
+}
+```
+
+- [ ] In Data/DataTests, there's a very simple example demonstrates how we can test repos.
 
 ### 🛡 License
 <details>

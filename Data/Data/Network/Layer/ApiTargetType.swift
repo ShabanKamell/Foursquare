@@ -30,7 +30,7 @@ public extension ApiTargetType {
      var headers: [String: String]? {
         [
             "Accept": "application/json",
-            "Authorization": "fsq3w+DyMAPcr200fzFcyRprY1Fc5SA2P74fyiqajn3TD3s="
+            "Authorization": FoursquareToken.token
         ]
     }
 

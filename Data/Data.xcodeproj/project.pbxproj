@@ -31,6 +31,7 @@
 		58B832299DF02983C028DCCC /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B832D9838565181C90B013 /* Task.swift */; };
 		58B832697F7A30B43BF2BC47 /* AppDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B837756F719E7580F599B1 /* AppDefaults.swift */; };
 		58B8330C8DE2B0004261A73E /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B8378811FF2E1DDEB880AD /* HTTPMethod.swift */; };
+		58B8331FC21E699E90E402F2 /* FoursquareToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B83DB5EDE1BAA4E1E9EB07 /* FoursquareToken.swift */; };
 		58B834B4F096A5958C786DBA /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B8325B030DFD7CF6A3564A /* Environment.swift */; };
 		58B83737257268F506D100CB /* NetworkConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B830AFA0F3634DBC023981 /* NetworkConnectivity.swift */; };
 		58B8375B6F5DB11F160FF587 /* AppDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B83A2F36918D84838C0EB3 /* AppDatabase.swift */; };
@@ -113,6 +114,7 @@
 		58B83D032ACD379F069FCDB2 /* VenuesRepoTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenuesRepoTest.swift; sourceTree = "<group>"; };
 		58B83D4D02DE63451EE73DFE /* VenuesResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenuesResponse.swift; sourceTree = "<group>"; };
 		58B83D5B671BCCA202ADFCE0 /* VenueItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueItem.swift; sourceTree = "<group>"; };
+		58B83DB5EDE1BAA4E1E9EB07 /* FoursquareToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoursquareToken.swift; sourceTree = "<group>"; };
 		58B83E106DED704A0D67158C /* VenueDao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueDao.swift; sourceTree = "<group>"; };
 		58B83E57C4A20231327E11DF /* VenuesRepo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenuesRepo.swift; sourceTree = "<group>"; };
 		58B83FDF9912EB194B8C7D03 /* VenueResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueResponse.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				58B832E6CB794F31DBD6F53D /* Network */,
 				1BCACB5D2AEC846D73B716B2 /* Shared */,
 				58B830161F515F4309692041 /* Database */,
+				58B83DB5EDE1BAA4E1E9EB07 /* FoursquareToken.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -551,6 +554,7 @@
 				58B8383D6E7904842DC07F28 /* VenuesLocalDataSrc.swift in Sources */,
 				58B83C2666B207DD5FC06F17 /* VenueDao.swift in Sources */,
 				58B8375B6F5DB11F160FF587 /* AppDatabase.swift in Sources */,
+				58B8331FC21E699E90E402F2 /* FoursquareToken.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
